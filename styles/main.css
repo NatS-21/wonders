@@ -1,0 +1,38 @@
+body {
+    font-family: 'Istok Web', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+}
+
+h2,h3,h4,h5,h6 {
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+header {
+    background-color: #6573c5;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}

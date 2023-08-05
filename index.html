@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исследование чудес света</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Istok+Web:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body onload="renderWonders()">
+<header>
+    <h1>Исследование чудес света</h1>
+</header>
+<div class="carousel">
+    <div class="carousel-slides">
+        <div class="carousel-slide">
+            <div class="slide-background">
+                <img src="resources/carousel_1.png" alt="">
+            </div>
+            <div class="slide-content">
+                <h2>Семь чудес света</h2>
+                <h3>Узнайте о них чуть больше</h3>
+                <button onclick="scrollToWondersList()">Узнать больше</button>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <div class="slide-background">
+                <img src="resources/carousel_2.png" alt="">
+            </div>
+            <div class="slide-content">
+                <h2>Галерея</h2>
+                <h3>Посмотрите захватывающие фотографии</h3>
+                <button onclick="redirectToGallery()">Узнать больше</button>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <div class="slide-background">
+                <img src="resources/carousel_3.png" alt="">
+            </div>
+            <div class="slide-content">
+                <h2>Чудеса повсюду</h2>
+                <h3>Стоит просто приглядеться</h3>
+                <button hidden>Узнать больше</button>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="prev-button"><</button>
+<button class="next-button">></button>
+<main>
+    <section class="wonders-list">
+        <h2>Чудеса света</h2>
+        <div class="search-container">
+            <label>
+                <input type="text" placeholder="Поиск..." onchange="handleSearch()" id="searchInput">
+            </label>
+        </div>
+        <div class="wonders-container"></div>
+    </section>
+</main>
+
+<script src="javascript/search.js"></script>
+<script src="javascript/carousel.js"></script>
+</body>
+</html>

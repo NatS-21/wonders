@@ -1,0 +1,163 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-slides {
+    display: flex;
+    height: 500px;
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    position: relative;
+}
+
+.slide-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slide-content button {
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(101, 115, 197, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+
+.wonders-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.wonders-list h2 {
+    text-align: center;
+}
+
+.wonders-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-container {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.wonder-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.wonder-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wonder-image {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.wonder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wonder-details {
+    flex: 1;
+}
+
+.wonder-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.wonder-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.wonder-details button {
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+@keyframes highlightBackground {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: rgba(101, 115, 197, 0.3);
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+.highlight {
+    animation: highlightBackground 1s;
+}
+
